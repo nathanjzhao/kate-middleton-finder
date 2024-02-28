@@ -12,6 +12,7 @@
     "@react-google-maps/api": "^2.19.3",
     "convex": "^1.10.0",
     "dotenv": "^16.4.5",
+    "js-cookie": "^3.0.5",
     "leaflet": "^1.9.4",
     "leaflet-defaulticon-compatibility": "^0.1.2",
     "next": "14.1.0",

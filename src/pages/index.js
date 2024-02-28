@@ -8,6 +8,8 @@ export default function Home() {
   const router = useRouter();
   const { query } = router;
 
+  const twitterHandle = 'nathanzhaoo';
+
   return (
     <>
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4">
@@ -15,6 +17,10 @@ export default function Home() {
         <div className="w-full md:w-full lg:w-3/4 xl:w-3/4 h-96 bg-white shadow-lg rounded-lg overflow-hidden">
           <MapComponent startX={query.x || 0} startY={query.y || 0}/>
         </div>
+
+        <footer className="w-full bg-blue-200 text-gray-700 text-center p-2 fixed bottom-0 text-sm">
+          Follow me on Twitter: <a href={`https://twitter.com/${twitterHandle}`} className="font-bold" target="_blank" rel="noopener noreferrer">@{twitterHandle}</a>
+        </footer>
       </div>
     </>
   );
