@@ -18,6 +18,11 @@ export default function Home() {
           <MapComponent startX={query.x || 0} startY={query.y || 0}/>
         </div>
 
+        <div className="w-full md:w-full lg:w-3/4 xl:w-3/4 bg-white shadow-lg rounded-lg overflow-hidden p-4 mt-4">
+          <h2 className="text-2xl font-bold mb-2">About Kate Middleton</h2>
+          <p>Kate Middleton, also known as Catherine, Duchess of Cambridge, is the wife of Prince William, Duke of Cambridge. Unforunately, she is missing. Where would she be?</p>
+        </div>
+
         <footer className="w-full bg-blue-200 text-gray-700 text-center p-2 fixed bottom-0 text-sm">
           Follow me on Twitter: <a href={`https://twitter.com/${twitterHandle}`} className="font-bold" target="_blank" rel="noopener noreferrer">@{twitterHandle}</a>
         </footer>

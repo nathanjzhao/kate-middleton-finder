@@ -1,5 +1,6 @@
 import React from 'react'
 import { ConvexProvider, ConvexReactClient } from "convex/react";
+import Head from 'next/head';
 import '../styles/globals.css'
 
 
@@ -9,6 +10,9 @@ function MyApp({ Component, pageProps }) {
 
     return (
       <>
+        <Head>
+          <link rel="icon" href="/kate.png" />
+        </Head>
         <ConvexProvider client={convex}>
           <Component {...pageProps} />
         </ConvexProvider>
